@@ -83,7 +83,6 @@ function SectionBlock({
   children,
 }: {
   title: string;
-  _count?: number;
   selected: number;
   total: number;
   onSelectAll: () => void;
@@ -231,7 +230,6 @@ export function ContentEditor({
       {profile.experience.length > 0 && (
         <SectionBlock
           title="Experience"
-          count={experience.ids.size}
           selected={experience.ids.size}
           total={profile.experience.length}
           onSelectAll={() => experience.selectAll(profile.experience.map((e) => e.id))}
@@ -254,7 +252,6 @@ export function ContentEditor({
       {profile.education.length > 0 && (
         <SectionBlock
           title="Education"
-          count={education.ids.size}
           selected={education.ids.size}
           total={profile.education.length}
           onSelectAll={() => education.selectAll(profile.education.map((e) => e.id))}
@@ -277,7 +274,6 @@ export function ContentEditor({
       {profile.skills.length > 0 && (
         <SectionBlock
           title="Skills"
-          count={skills.ids.size}
           selected={skills.ids.size}
           total={profile.skills.length}
           onSelectAll={() => skills.selectAll(profile.skills.map((s) => s.id))}
@@ -307,7 +303,6 @@ export function ContentEditor({
       {profile.projects.length > 0 && (
         <SectionBlock
           title="Projects"
-          count={projects.ids.size}
           selected={projects.ids.size}
           total={profile.projects.length}
           onSelectAll={() => projects.selectAll(profile.projects.map((p) => p.id))}
@@ -330,7 +325,6 @@ export function ContentEditor({
       {profile.certifications.length > 0 && (
         <SectionBlock
           title="Certifications"
-          count={certifications.ids.size}
           selected={certifications.ids.size}
           total={profile.certifications.length}
           onSelectAll={() => certifications.selectAll(profile.certifications.map((c) => c.id))}
@@ -353,7 +347,6 @@ export function ContentEditor({
       {profile.achievements.length > 0 && (
         <SectionBlock
           title="Achievements"
-          count={achievements.ids.size}
           selected={achievements.ids.size}
           total={profile.achievements.length}
           onSelectAll={() => achievements.selectAll(profile.achievements.map((a) => a.id))}
