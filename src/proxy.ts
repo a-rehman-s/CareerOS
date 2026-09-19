@@ -1,5 +1,5 @@
 /**
- * Next.js Middleware — Route Protection
+ * Next.js Proxy (formerly Middleware) — Route Protection
  *
  * Protects /dashboard/* routes.
  * Redirects unauthenticated users to /sign-in.
